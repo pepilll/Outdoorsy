@@ -1,0 +1,54 @@
+<com.google.android.material.appbar.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/appBarLayout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_80"
+    android:background="?attr/colorPrimary">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginEnd="@dimen/dimen_16"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/search_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_48"
+                android:layout_marginLeft="@dimen/dimen_48"
+                android:layout_marginRight="@dimen/dimen_48"
+                android:gravity="center|start"
+                android:background="@android:color/transparent"
+                android:hint="@string/search" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/search_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|start"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="@dimen/dimen_8"
+                android:src="@drawable/ic_search" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/mic_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|end"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="@dimen/dimen_8"
+                android:src="@drawable/ic_mic" />
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.appbar.AppBarLayout>

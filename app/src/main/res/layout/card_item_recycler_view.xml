@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardElevation="@dimen/dimen_8"
+    android:layout_marginLeft="@dimen/dimen_16"
+    android:layout_marginRight="@dimen/dimen_16"
+    android:layout_marginTop="@dimen/dimen_8"
+    android:layout_marginBottom="@dimen/dimen_8"
+    android:elevation="@dimen/dimen_8">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/vehicleImageView"
+            android:layout_width="@dimen/dimen_92"
+            android:layout_height="@dimen/dimen_64"
+            android:layout_margin="@dimen/dimen_4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/search_edit_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:textSize="@dimen/dimen_text_16"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/vehicleImageView"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="text view" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
